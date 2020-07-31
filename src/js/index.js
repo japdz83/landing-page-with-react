@@ -13,15 +13,22 @@ import "../styles/index.scss";
 //import { Home } from "./component/home.js";
 import { Cards } from "./component/Cards";
 import { Jumbotron } from "./component/jumbotron";
+import { Navs } from "./component/Navs";
+import { Footer } from "./component/Footer";
 
 // Renderizado de los componentes para Landing Page
 ReactDOM.render(
-	<div className="container m-5">
-		<Jumbotron />
-		<div className="card-deck">
-			<Cards />
+	<div>
+		<Navs />
+		<div className="container text-center">
+			,<Jumbotron />,
+			<div className="card-deck">
+				<Cards />
+			</div>
 		</div>
+		,<Footer />
 	</div>,
+
 	document.querySelector("#app")
 );
 
