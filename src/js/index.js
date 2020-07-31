@@ -12,10 +12,13 @@ import "../styles/index.scss";
 //import your own components
 //import { Home } from "./component/home.js";
 import { Cards } from "./component/Cards";
+import { Jumbotron } from "./component/jumbotron";
 
 // Renderizado de los componentes para Landing Page
 ReactDOM.render(
 	<div className="container">
+
+	<Jumbotron /> 
 		<div className="card-deck">
 			<Cards />
 		</div>
@@ -25,5 +28,5 @@ ReactDOM.render(
 
 // Dentro del ReactDOM.render colocar:
 //  <NavBar /> ----- debajo del <div container>
-//  <Jumbotron /> ---- debajo de <NavBar/>
+//  <Jumbotron /> ---- debajo de <NavBar/> 
 //  <Footer/> ------ antes del <div>, que cierra el container
