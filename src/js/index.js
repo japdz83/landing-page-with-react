@@ -20,13 +20,13 @@ import { Footer } from "./component/Footer";
 ReactDOM.render(
 	<div>
 		<Navs />
-		<div className="container text-center">
-			,<Jumbotron />,
+		<div className="container">
+			<Jumbotron />
 			<div className="card-deck">
 				<Cards />
 			</div>
 		</div>
-		,<Footer />
+		<Footer />
 	</div>,
 
 	document.querySelector("#app")
